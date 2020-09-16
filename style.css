@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+}
+/*body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}*/
+
+/* Header/logo Title */
+header {
+  padding: 0px;
+  background: #1abc5b;
+  color: black;
+}
+
+
+.center{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-family:Times New Roman, Times, serif;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.left{
+  float:left;
+}
+
+.title1{
+  display: block;
+  color:#962800;
+  font-family:'Trocchi', serif; /*'Raleway',sans-serif;*/;
+  font-size: 30px;
+  margin-left: 500px;
+  float: center;
+
+}
+.mar{
+  font-family: 'Inder', sans-serif;
+  color:white;
+}
+p{
+  font-size: 20px;
+  font-family:Arial,Helevetica,sana-serif;
+
+}
+
+h2{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #3C964B;
+}
+
+
+@keyframes slideshow {
+  10% {left: 0;}
+  20% {left: 0;}
+  30% {left: -100%;}
+  40% {left: -100%;}
+  50% {left: -200%;}
+  60% {left: -200%;}
+  70% {left: -300%;}
+  80% {left: -300%;}
+  90% {left: -400%;}
+  100% {left: -400%}
+}
+
+
+#slider{overflow:hidden;auto; border: 5px solid transparent;border-radius: 0px;}
+#slider figure img{width:20%;float:left;}
+#slider figure{position:relative;width:500%;text-align:left;animation:20s slideshow infinite}
+
+@media screen and (max-width: 767px) {#slider {overflow: hidden; width: 100%; margin: 0 auto;}}
+
+
+.column_contact {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 250px;
+  font-size: 30px;
+  font-family:Arial,Helevetica,sana-serif;
+  text-align: center;
+}
+
+.row_contact:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.img1{
+  height:100;
+  width:33.33%;
+}
+
+.column_hos {
+  float: left;
+  width: 30 %;
+  height:100;
+  padding: 0 10px;
+}
+.column_hos1 {
+  float: left;
+  width: 33.33%;
+  height:100;
+  padding: 0 10px;
+}
+/* Remove extra left and right margins, due to padding */
+.row_hos {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row_hos:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column_hos {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card_hos {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #3B9C9C;
+}
+h4{
+  text-align:left;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+  background: #282828;
+  color: white;
+  height: auto;
+}
+
+.left1>a{
+  float:left;
+  color: white;
+  text-decoration: none;
+}
+.right1{
+  float:right;
+  color: white;
+  text-decoration: none;
+}
+
+.right1>a{
+  color: white;
+  text-decoration: none;
+}
+
+footer a{
+  text-decoration: none;
+  color:white;
+  
+}
+
+.column_spec {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row_spec::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div>div>a{
+  text-decoration: none;
+  color:black;
+  font-size: 15px;
+}
+
+.copy p{
+  font-size: large;
+  font-family: sans-serif;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
